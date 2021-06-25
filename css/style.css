@@ -1,3 +1,5 @@
-.jumbotron{
-    background-color: ;
+#intro{
+    background-image: url(../images/Pizza-Wallpapers-1024x640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
