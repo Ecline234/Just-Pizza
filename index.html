@@ -7,44 +7,170 @@
     <title>Pizza App</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/jquery-3.6.0.js">
+    <link rel="stylesheet" href="js/script.js">
 </head>
 <body>
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <div class="row" id="intro">
-          <div class="col">
+          <div class="col-md-5">
             <h1 class="display-4">JUST PIZZA!</h1>
             <p class="lead">NOTHING BUT JUST PIZZA HERE🍕</p>
           </div>
-          <div class="col">
-            <nav class="navbar navbar-light bg-light">
-              <a class="navbar-brand" href="#">
-                <img src="/images/pizzaonspoon.jpg" width="30" height="30" class="d-inline-block align-top" alt="pizzaonspoon">
+          <div class="col-md-3">
+            <nav class="navbar navbar-light">
                 <p>IT'S FINGERLICKING YUMMY😋</p>
-              </a>
             </nav>
           </div>
-          <div class="col">
+          <div class="col-3">
             <ul class="nav justify-content-end">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Active</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link active text-white" href="#">MAKE YOUR ORDER:</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-        <div class="container">
+      
+      <div class="container" id="carousel">
+        <div class="row  align-items-center">
+          <div class="col-md-4 text-white text-center pt-5">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide mt-5px" data-bs-ride="carousel">
+              <div class="carousel-indicators h-75">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              </div>
+              <h3>OUR MENU</h3>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="/images/hawaaian.jpg" class="d-block w-75" alt="hawaaian">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Hawaaian Pizza</h5>
+                    <p>Kshs.1100</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="/images/cheese2.jpg" class="d-block w-75" alt="cheese">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>CHEESE</h5>
+                    <p>KSHs.1000</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/images/chicken.jpg" class="d-block w-75" alt="chicken">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>CHICKEN</h5>
+                    <p>KSHs.1300</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/images/pepz.png" class="d-block w-32rem" alt="pep3">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>PEPPERONI</h5>
+                    <p>KSHs.1000</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/images/ham3.jpg" class="d-block w-75" alt="ham3">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>HAM</h5>
+                    <p>KSHs.1100</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/images/mush2.png" class="d-block w-75" alt="mush2">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>MUSHROOM</h5>
+                    <p>KSHs.900</p>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
           
+          <div class="col-md-4 mt-5">
+            <div class="order mt-3 text-center text-white h-15">
+              <h3>MAKE YOUR ORDER</h3>
+            </div>
+            <div class="p-3 border bg-dark text-white w-75" id="veg">
+              <h2>Pizza Type</h2>
+              <select class="form-select" aria-label="Default select">
+              <option selected>Vegetarian</option>
+              <option value="1">Hawaaian</option>
+              <option value="2">Cheese</option>
+              <option value="3">Mushroom</option>
+              </select>
+           </div>
+           <div class="p-3 border bg-dark w-75" id="non-veg">
+            <select class="form-select" aria-label="Default select">
+            <option selected>Non-Vegetarian</option>
+            <option value="1">Chicken</option>
+            <option value="2">Pepperoni</option>
+            <option value="3">Ham</option>
+            </select>
+           </div>
+           <div class="col-md-4 mt-3 w-75">
+            <div class="p-3 border bg-dark text-white" id="size">
+              <h2>Pizza Size</h2>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Small</option>
+                <option value="1">Small</option>
+                <option value="2">Medium</option>
+                <option value="3">Large</option>
+              </select>
+            </div>
+          </div>
+          </div>  
+
+          <div class="col-md-4 ">
+            <div class="order mt-5 text-white text-center">
+              <h3>CHOOSE YOUR CRUST&TOPPINGS</h3>
+            </div>
+            <div class="p-3 border bg-dark text-white w-75" id="salami">
+              <h2>Toppings</h2>
+              <select class="form-select" aria-label="Default select">
+              <option selected>Vegetarian</option>
+              <option label="Tomatoes Kshs.50" value="1">Tomatoes</option>
+              <option label="Olives Kshs.100" value="2">Olives</option>
+              <option label="Pineapples Kshs.150" value="150">Pineapples</option>
+              </select>
+           </div>
+           <div class="p-3 border bg-dark w-75" id="olives">
+              <select class="form-select" aria-label="Default select">
+              <option selected>Non-Vegetarian</option>
+              <option value="1">Salami</option>
+              <option value="2">Bacon</option>
+              <option value="3">Sausages</option>
+              </select>
+           </div>
+           <div class="col-md-4 mt-3 w-75">
+            <div class="p-3 border bg-dark text-white" id="crust">
+              <h2>Crust</h2>
+              <select class="form-select" aria-label="Default select example">
+              <option selected>Thin</option>
+              <option value="1">Thick</option>
+              <option value="2">Stuffed</option>
+              </select>
+            </div>
+          </div>
+          </div> 
         </div>
       </div>
+       
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+     
 </body>
 </html>
