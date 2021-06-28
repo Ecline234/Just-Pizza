@@ -1,13 +1,13 @@
 body {
     background-color: rgb(238,69,59);
+    font-size: large;
+    font-style: oblique;
+    font-weight: bolder;
 }
 #intro{
     text-align: center;
     padding: 5px;
     color: white;
-    font-size: large;
-    font-style: oblique;
-    font-weight: bolder;
     background-image: url(/images/types.jpg);
     background-repeat: no-repeat;
     background-position: center;
