@@ -47,3 +47,7 @@ body {
   border-radius: 2px;
   display: none;
 }
+
+#order {
+  text-align: center;
+}
