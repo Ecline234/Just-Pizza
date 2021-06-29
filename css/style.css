@@ -5,13 +5,13 @@ body {
   font-weight: bolder;
 }
 #intro {
-  text-align: center;
-  padding: 5px;
-  color: white;
   background-image: url(/images/types.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-blend-mode: hard-light;
+  text-align: center;
+  padding: 5px;
+  color: white;
 }
 
 #veg,
