@@ -1,38 +1,48 @@
 body {
-    background-color: rgb(238,69,59);
-    font-size: large;
-    font-style: oblique;
-    font-weight: bolder;
+  background-color: rgb(238, 69, 59);
+  font-size: large;
+  font-style: oblique;
+  font-weight: bolder;
 }
-#intro{
-    text-align: center;
-    padding: 5px;
-    color: white;
-    background-image: url(/images/types.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-blend-mode: hard-light;
-}
-
-#veg,#non-veg,#crust,#size,#olives,#salami {
-    background-image: url(/images/pizzaonspoon.jpg);
+#intro {
+  text-align: center;
+  padding: 5px;
+  color: white;
+  background-image: url(/images/types.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: hard-light;
 }
 
-.carousel-item{
-    height: 15rem;
-    background-color: white;
-    position: relative;
+#veg,
+#non-veg,
+#crust,
+#size,
+#olives,
+#salami {
+  background-image: url(/images/pizzaonspoon.jpg);
+}
+
+.carousel-item {
+  height: 15rem;
+  background-color: white;
+  position: relative;
 }
 
 #carousel {
-    position: relative;
-    bottom: 50px;
-    left: 50px;
-    right: 50px;
-    padding-bottom: 5px;
+  position: relative;
+  bottom: 50px;
+  left: 50px;
+  right: 50px;
+  padding-bottom: 5px;
 }
 
 .d-block {
-    align-items: center;
+  align-items: center;
 }
 
+#table {
+  margin-left: 12em;
+  padding-right: 22em;
+  border-radius: 2px;
+}
