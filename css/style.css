@@ -20,7 +20,7 @@ body {
 #size,
 #olives,
 #salami {
-  background-image: url(../images/pizzaonspoon.jpg);
+  background-image: url(./images/pizzaonspoon.jpg);
 }
 
 .carousel-item {
