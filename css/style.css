@@ -5,7 +5,7 @@ body {
   font-weight: bolder;
 }
 #intro {
-  background-image: url(/images/types.jpg);
+  background-image: url(../images/types.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-blend-mode: hard-light;
@@ -20,7 +20,7 @@ body {
 #size,
 #olives,
 #salami {
-  background-image: url(/images/pizzaonspoon.jpg);
+  background-image: url(../images/pizzaonspoon.jpg);
 }
 
 .carousel-item {
