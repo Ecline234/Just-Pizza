@@ -12,14 +12,14 @@ body {
   text-align: center;
   padding: 5px;
   color: white;
+  background-size: cover;
+  height: fit-content;
 }
 
-#veg,
-#non-veg,
+#type,
 #crust,
 #size,
-#olives,
-#salami {
+#toppings{
   background-image: url(../images/pizzaonspoon.jpg);
 }
 
@@ -48,6 +48,9 @@ body {
   display: none;
 }
 
-#order {
+.btn {
   text-align: center;
+  color: white;
+  box-shadow: 2px 2px 5px black;
+  background-color: rgb(148,127,34);
 }

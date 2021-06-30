@@ -1,4 +1,8 @@
-const pizzaType = ["H"]
+// function order (){
+//     var pizzaType = document.getElementById("pizzatypes").value;
+//     var size = document.getElementById("size").value;
+//     var toppings = document.getElementById("toppings").value;
+//     var crust = document.getElementById("crust").value;
 
 
 // $(document).ready(function(){
@@ -12,7 +16,7 @@ const pizzaType = ["H"]
 //         var order = 1;
 //         var grandTotal = 0;
         
-//         $(table).show();
-//         $(order).hide();
+//         $("table").show();
+//         $("order").show();
 //     });
 // });
